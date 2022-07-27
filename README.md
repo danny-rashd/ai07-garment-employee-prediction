@@ -3,7 +3,7 @@
 The aim of this project is to create a model that can predict the employee's productivity.
 
 ## IDE and Framework
-The model project is built with Spyder and Visual Studio Code for python and jupyter notebook respectively. 
+This project is built using Spyder and Visual Studio Code for the python and jupyter notebook respectively. 
 
 The packages used in this project are Pandas, NumPy, Scikit-learn, TensorFlow Keras and Matplotlib.
  
@@ -34,14 +34,19 @@ The dataset was obtained from [UCI Machine Learning Repository](https://archive.
 
 ### 3.2 Data pipeline
 
-Figure below shows the structure of the model.
-![Model Structure](public/model.png)
+The data is first loaded and preprocessed to properly split them into features and labels. In this project, we have 2 labels for regression and classification problems. Since the initial label for the data are continuous, we have created another label for the classification problem with the classes of 0 (Not Productive) and 1 (Productive).
 
-The model is trained with a batch size of %% and for %% epochs. Early stopping and dropout is applied in this training to reduce overfitting. The training stops at epoch ##, with a training accuracy of 92.58% and validation accuracy of 90.42%. The results of the training process are shown in the graph below:
-
-![Graph](public/train_result.png)
+Then, the data is split into train and test sets, with a ratio of 80:20.
 
 ### 3.3 Model pipeline
+In order the perform both classification and regression for the same model, 2 different output layers are used. 
+Figure below shows the structure of the model:
+
+![Model Structure](public/model.png)
+
+The model is trained with a batch size of 16 and for 50 epochs. Dropout is applied during training to reduce overfitting. After the model has stopped training, we have obtained a training accuracy of 92.58% and validation accuracy of 90.42%. The results of the training process are shown in the graph below:
+
+![Graph](public/train_result.png)
 
 ## Results
 
