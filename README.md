@@ -35,16 +35,23 @@ The dataset was obtained from [UCI Machine Learning Repository](https://archive.
 ### 3.2 Data pipeline
 
 Figure below shows the structure of the model.
+![Model Structure](public/model.png)
 
-The model is trained with a batch size of %% and for %% epochs. Early stopping and dropout is applied in this training to reduce overfitting. The training stops at epoch ##, with a training accuracy of ##% and validation accuracy of ##%. The results of the training process are shown in the graph below:
+The model is trained with a batch size of %% and for %% epochs. Early stopping and dropout is applied in this training to reduce overfitting. The training stops at epoch ##, with a training accuracy of 92.58% and validation accuracy of 90.42%. The results of the training process are shown in the graph below:
+
+![Graph](public/train_result.png)
 
 ### 3.3 Model pipeline
 
 ## Results
 
-Upon evaluating the model with test data, the model obtained the following test results, as shown in figure below:
+Upon evaluating the model with test data, we have obtained the accuracy score and mean absolute error for the classification and regression model respectively. 
 
+![Classification Results](public/score.png)
 
+Using the predictions from the regression model, the graph of predictions against labels are as shown in the image below:
+
+![Regression Results](public/pred_vs_values.png)
 
 # License
 Distributed under GNU General Public License v3.0. See [LICENSE](LICENSE) for more information.
