@@ -62,5 +62,5 @@ Using the predictions from the regression model, the graph of predictions agains
 Distributed under GNU General Public License v3.0. See [LICENSE](LICENSE) for more information.
 
 # Acknowledgements
-- [Kah Chun Kong - SHRDC Instructor ](https://github.com/ch4mploo/)
-- [StackExchange on how to classify and regress on the same model](https://stats.stackexchange.com/questions/77330/classify-and-regress-at-the-same-time)
+-  Kah Chun Kong - SHRDC Technical Instructor [![Github](https://img.shields.io/badge/Github-171515?style=flat-square&logo=github&logoColor=black)](https://github.com/ch4mploo/)
+- [StackExchange - How to classify and regress on the same model](https://stats.stackexchange.com/questions/77330/classify-and-regress-at-the-same-time)
