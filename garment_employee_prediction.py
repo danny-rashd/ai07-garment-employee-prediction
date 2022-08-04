@@ -69,7 +69,7 @@ scaler.fit(X_train)
 X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 
-#Create a functional API model
+# Create a functional API model
 nIn = X_train.shape[1]
 # nClass = output for classification model
 nClass = len(np.unique(y_test_class))
@@ -127,7 +127,7 @@ error = mean_absolute_error(y_test, y_pred_reg)
 print('MAE: %.3f' % error)
 
 # Visualize the plot of prediction vs label
-plt.figure(figsize=(10,10))
+plt.figure(figsize=(10, 10))
 plt.scatter(y_test, y_pred_reg, c='crimson')
 plt.yscale('log')
 plt.xscale('log')
